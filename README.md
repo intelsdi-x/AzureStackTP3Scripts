@@ -1,8 +1,8 @@
 # AzureStackTP3Scripts
-Script for Autorization and Marketplace Items
+1. Scripts for Autorization and Marketplace Items
+2. Scripts for Pre and PostDeployments Checks
 
-
-## To work with the Azure’s Resource Manager on setup and get Authorization Token use this scripts:<br>
+## 1. To work with the Azure’s Resource Manager on setup and get Authorization Token use this scripts:<br>
 
 Requirement: Install Module AzureRM by on time run: onetimerun.ps1
 For Azure Stack TP2 use - Authentication AADTP2.ps1
@@ -28,6 +28,16 @@ To use these tools, obtain Azure Stack compatible Azure PowerShell module. Execu
 Requirement: Downloaded Azure Tools and then make sure the following modules are imported:.\AzureStack.ComputeAdmin.psm1.
 Script include required modules and provide example path wit images to import - UploadImage.ps1
 
+##2. Deployment Checker for Azure Stack Technical Preview
+This script goes through the pre-requisites checks done by the setup for Azure Stack technical previews, starting. It provides a way to confirm you are meeting the hardware and software requirements - Invoke-AzureStackDeploymentPreCheck.ps1
 
+##Post Deploy Script AzureStack For TP2
+This post-deployment script fixes several important bugs (PasswordPolicy/NAT/WinRM), clears up logs (WinRM/Tracing) and improves the overall performance of your Azure Stack environment - PostDeployScript-AzureStack.ps1
+
+##The Right Order to start all VMs in AzureStack
+Run this script to bring to onlie all Azure Stack services in Cluster - Start_vms.ps1
+
+##Deployment from GIT
+This script show how to deploy example extensions from GIT repo into VM run in specific ResourceGroup in our AzureStack - Deployment from GIT.ps1
 
 
