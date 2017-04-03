@@ -6,7 +6,7 @@
 
 Requirement: Install Module AzureRM by on time run: onetimerun.ps1
 For Azure Stack TP2 use 
-- Authentication AADTP2.ps1
+- Authentication AADTP2.ps1<br>
 Or
 For Azure Stack TP3 use 
 - Authorization AADTP3.ps1
