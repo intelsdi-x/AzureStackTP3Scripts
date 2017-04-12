@@ -16,7 +16,7 @@ Get-ChildItem -Path .\AzureStack-Tools-master -Directory | ForEach-Object -Proce
 } 
 #endregion
  
-$Password = ConvertTo-SecureString "Intel123!" -AsPlainText -Force
+$Password = ConvertTo-SecureString "Password" -AsPlainText -Force
 $AadTenant = Get-AzureStackAadTenant -HostComputer 192.168.200.65 -Password $Password
  
 # Use this command to access the administrative portal
