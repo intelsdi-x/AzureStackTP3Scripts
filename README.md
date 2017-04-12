@@ -26,10 +26,20 @@ Usage:
 ## Tools for using Azure and Azure Stack
 To use these tools, obtain Azure Stack compatible Azure PowerShell module. Execute script - azurestack-tools.ps1 To install required modulles and download tools. More info goto: <a href=https://github.com/Azure/AzureStack-Tools>AzureStack-Tools</a>
 
-## To Upload your images to marketplace in AzureStack use script: UploadImage.ps1
+## To Upload your images to marketplace in AzureStack TP2 use script: UploadImage.ps1
 Requirement: Downloaded Azure Tools and then make sure the following modules are imported:.\AzureStack.ComputeAdmin.psm1.
 Script include required modules and provide example path wit images to import 
 - UploadImage.ps1
+
+## To Upload Windows Server image from ISO file to marketplace in AzureStack TP3 
+Requirement: Downloaded Azure Tools and then make sure the following modules are imported:.\AzureStack.ComputeAdmin.psm1 and Import-Module .\Connect\AzureStack.Connect.psm1 
+ 
+Script include required modules and provide example path wit images to import 
+- Upload_win2016_image.ps1
+
+## To Import Linux images vhd to marketplace in AzureStack TP3
+Require Install AzureRM Bootstrapper and set API version
+- Import Linux images TP3.ps1
 
 ## 2. Deployment Checker for Azure Stack Technical Preview
 This script goes through the pre-requisites checks done by the setup for Azure Stack technical previews, starting. It provides a way to confirm you are meeting the hardware and software requirements 
