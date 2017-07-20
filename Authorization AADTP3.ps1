@@ -15,6 +15,9 @@ Get-ChildItem -Path .\AzureStack-Tools-master -Directory | ForEach-Object -Proce
     }
 } 
 #endregion
+
+Import-Module ..\Connect\AzureStack.Connect.psm1
+Import-Module ..\Identity\AzureStack.Identity.psm1
  
 $Password = ConvertTo-SecureString "Password" -AsPlainText -Force
 $AadTenant = Get-AzureStackAadTenant -HostComputer 192.168.200.65 -Password $Password
